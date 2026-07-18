@@ -1,75 +1,63 @@
-# React + TypeScript + Vite
+# Dayu Hidayatullah - Portfolio 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Portfolio Preview](./public/favicon.svg) <!-- You can replace this with a real screenshot of the app later -->
 
-Currently, two official plugins are available:
+A modern, highly responsive personal portfolio website built to showcase my experience, projects, and technical skills as a Software Developer.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🎨 Design System
+This portfolio features a **Vibrant Frosted Glass Bento Box Grid** design:
+- **Bento Grid Architecture**: Clean, asymmetric, dashboard-like layout structured into perfect grid cells.
+- **Glassmorphism**: Beautiful frosted glass UI (`backdrop-blur-xl`) on all cards with subtle hover animations.
+- **Animated Background**: Floating neon orbs (Purple, Cyan, Pink) with `mix-blend-screen` effects in Dark Mode.
+- **Theme Switcher**: Fully functional Light ☀️ and Dark 🌙 mode toggle to adapt to user preferences.
 
-## React Compiler
+## 🛠️ Tech Stack
+- **Framework**: [React 18](https://react.dev/) + [Vite](https://vitejs.dev/)
+- **Language**: TypeScript
+- **Styling**: [Tailwind CSS 3](https://tailwindcss.com/)
+- **Deployment**: (Ready for Vercel / Netlify / GitHub Pages)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📦 Getting Started
 
-## Expanding the ESLint configuration
+Follow these instructions to run the project locally.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Prerequisites
+Make sure you have [Node.js](https://nodejs.org/) and [Yarn](https://yarnpkg.com/) installed on your machine.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/dayuhidayatullah/portofolio.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd portofolio
+   ```
+3. Install dependencies:
+   ```bash
+   yarn install
+   ```
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Running Locally
+To start the Vite development server, run:
+```bash
+yarn dev
+```
+Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+### Building for Production
+To build the app for production to the `dist` folder:
+```bash
+yarn build
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 👨‍💻 About Me
+I'm **Dayu Hidayatullah**, a Software Developer based in Jakarta, Indonesia. I specialize in blending beautiful UI design with robust backend integrations. I'm passionate about building scalable web applications, handling real-time data, and crafting seamless user experiences.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- 💼 Available for new opportunities
+- 📧 Contact: hidayatullahdayu@gmail.com
+- 🔗 LinkedIn: [dayu-hidayatullah](https://www.linkedin.com/in/dayu-hidayatullah)
+- 🐙 GitHub: [dayuhidayatullah](https://github.com/dayuhidayatullah)
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+---
+*Crafted with ❤️ by Dayu Hidayatullah.*
